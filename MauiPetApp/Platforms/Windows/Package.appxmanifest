@@ -22,13 +22,14 @@
   </Dependencies>
 
   <Resources>
-    <Resource Language="x-generate" />
+    <Resource Language="en-US"/>
+    <Resource Language="ru-RU"/>
   </Resources>
 
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="$placeholder$"
+        DisplayName="ms-resource:AppDisplayName"
         Description="$placeholder$"
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"

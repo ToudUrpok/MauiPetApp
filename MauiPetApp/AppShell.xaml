@@ -3,12 +3,22 @@
     x:Class="MauiPetApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiPetApp"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:pages="clr-namespace:MauiPetApp.Pages"
+    xmlns:strings="clr-namespace:MauiPetApp.Resources.Localization">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent Title="{x:Static strings:AppResources.ChatsPageTitle}"
+              Icon="chatsdark.png"
+              ContentTemplate="{DataTemplate pages:ChatsPage}" />
+        <Tab Title="{x:Static strings:AppResources.DataTabTitle}"
+             Icon="datadark.png">
+            <ShellContent Title="{x:Static strings:AppResources.ImagesPageTitle}"
+                          Icon="imagesdark.png"
+                          ContentTemplate="{DataTemplate pages:ImagesPage}" />
+            <ShellContent Title="{x:Static strings:AppResources.FilesPageTitle}"
+                          Icon="filesdark.png"
+                          ContentTemplate="{DataTemplate pages:FilesPage}" />
+        </Tab>
+    </TabBar>
 
 </Shell>
