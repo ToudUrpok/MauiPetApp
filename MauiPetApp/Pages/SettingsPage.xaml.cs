@@ -8,8 +8,22 @@ public partial class SettingsPage : ContentPage
 	{
 		InitializeComponent();
 
-        themePicker.SelectedItem = ThemeHelper.GetCurrentTheme();
+        bool isSystemThemeUsed = ThemeHelper.IsSystemThemeUsed();
+
+        useSystemTheme.IsChecked = isSystemThemeUsed;
+        useSystemTheme.CheckedChanged += OnCheckedChanged;
+
+        themePicker.IsEnabled = !isSystemThemeUsed;
+        themePicker.SelectedItem = ThemeHelper.GetCurrentAppTheme();
         themePicker.SelectedIndexChanged += OnPickerSelectionChanged;
+    }
+
+    void OnCheckedChanged(object sender, EventArgs e)
+    {
+        CheckBox cb = sender as CheckBox;
+
+        themePicker.IsEnabled = !cb.IsChecked;
+        ThemeHelper.SetTheme(cb.IsChecked);
     }
 
     void OnPickerSelectionChanged(object sender, EventArgs e)
@@ -17,6 +31,6 @@ public partial class SettingsPage : ContentPage
         Picker picker = sender as Picker;
         Theme theme = (Theme)picker.SelectedItem;
 
-        ThemeHelper.SetTheme(theme);
+        ThemeHelper.SetAppTheme(theme);
     }
 }

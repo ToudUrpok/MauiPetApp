@@ -8,17 +8,7 @@ public partial class App : Application
     {
         InitializeComponent();
 
-        var theme = ThemeHelper.GetCurrentTheme();
-
-        ThemeHelper.SetTheme(theme);
-        //if (Preferences.Get("UseSystemTheme", false))
-        //{
-        //    mergedDictionaries.Add(new SystemTheme());
-        //}
-        //else
-        //{
-
-        //}
+        ThemeHelper.InitTheme();
 
         MainPage = new AppShell();
     }

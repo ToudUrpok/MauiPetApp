@@ -129,6 +129,9 @@
   <data name="ImagesPageTitle" xml:space="preserve">
     <value>Images</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
   <data name="Page" xml:space="preserve">
     <value>page</value>
   </data>
@@ -137,5 +140,11 @@
   </data>
   <data name="SettingsPageTitle" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="SettingsPageUseSystemTheme" xml:space="preserve">
+    <value>Use System Theme Settings</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
   </data>
 </root>

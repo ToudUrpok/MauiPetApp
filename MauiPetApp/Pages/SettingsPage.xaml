@@ -7,8 +7,27 @@
              xmlns:strings="clr-namespace:MauiPetApp.Resources.Localization"
              Title="{x:Static strings:AppResources.SettingsPageTitle}">
     <VerticalStackLayout>
+        <!--<Label Text="{x:Static strings:AppResources.Language}"
+               Padding="10,0"
+               SemanticProperties.HeadingLevel="Level1"
+               FontSize="20" />-->
+        
+        
+
+        <Label Text="{x:Static strings:AppResources.Theme}"
+               Padding="10,0"
+               SemanticProperties.HeadingLevel="Level1"
+               FontSize="20" />
+        
         <controls:EnumPicker x:Name="themePicker"
                              EnumType="{x:Type local:Theme}"
                              Title="{x:Static strings:AppResources.SettingsPageThemePickerTitle}" />
+
+        <HorizontalStackLayout>
+            <CheckBox x:Name="useSystemTheme" />
+            <Label Text="{x:Static strings:AppResources.SettingsPageUseSystemTheme}"
+                   Margin="20,0,0,0"
+                   VerticalOptions="Center" />
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

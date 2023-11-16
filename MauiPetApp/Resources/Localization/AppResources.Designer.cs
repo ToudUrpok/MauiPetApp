@@ -97,6 +97,15 @@ namespace MauiPetApp.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to page.
         /// </summary>
         internal static string Page {
@@ -120,6 +129,24 @@ namespace MauiPetApp.Resources.Localization {
         internal static string SettingsPageTitle {
             get {
                 return ResourceManager.GetString("SettingsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use System Theme Settings.
+        /// </summary>
+        internal static string SettingsPageUseSystemTheme {
+            get {
+                return ResourceManager.GetString("SettingsPageUseSystemTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string Theme {
+            get {
+                return ResourceManager.GetString("Theme", resourceCulture);
             }
         }
     }
