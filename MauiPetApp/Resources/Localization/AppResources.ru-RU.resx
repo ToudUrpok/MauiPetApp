@@ -132,4 +132,10 @@
   <data name="Page" xml:space="preserve">
     <value>страница</value>
   </data>
+  <data name="SettingsPageThemePickerTitle" xml:space="preserve">
+    <value>Выберите тему</value>
+  </data>
+  <data name="SettingsPageTitle" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
 </root>

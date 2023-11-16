@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPetApp.Pages.SettingsPage"
+             xmlns:local="clr-namespace:MauiPetApp"
+             xmlns:controls="clr-namespace:MauiPetApp.Controls"
+             xmlns:strings="clr-namespace:MauiPetApp.Resources.Localization"
+             Title="{x:Static strings:AppResources.SettingsPageTitle}">
+    <VerticalStackLayout>
+        <controls:EnumPicker x:Name="themePicker"
+                             EnumType="{x:Type local:Theme}"
+                             Title="{x:Static strings:AppResources.SettingsPageThemePickerTitle}" />
+    </VerticalStackLayout>
+</ContentPage>

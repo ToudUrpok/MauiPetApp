@@ -19,6 +19,9 @@
                           Icon="filesdark.png"
                           ContentTemplate="{DataTemplate pages:FilesPage}" />
         </Tab>
+        <ShellContent Title="{x:Static strings:AppResources.SettingsPageTitle}"
+          Icon="settingslight.png"
+          ContentTemplate="{DataTemplate pages:SettingsPage}" />
     </TabBar>
 
 </Shell>

@@ -132,4 +132,10 @@
   <data name="Page" xml:space="preserve">
     <value>page</value>
   </data>
+  <data name="SettingsPageThemePickerTitle" xml:space="preserve">
+    <value>Select Theme</value>
+  </data>
+  <data name="SettingsPageTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
 </root>
