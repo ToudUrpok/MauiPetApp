@@ -120,6 +120,9 @@
   <data name="ChatsPageTitle" xml:space="preserve">
     <value>Чаты</value>
   </data>
+  <data name="CreatePost" xml:space="preserve">
+    <value>Создать пост</value>
+  </data>
   <data name="DataTabTitle" xml:space="preserve">
     <value>Данные</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="Page" xml:space="preserve">
     <value>страница</value>
+  </data>
+  <data name="PostsPageTitle" xml:space="preserve">
+    <value>Посты</value>
   </data>
   <data name="SettingsPageThemePickerTitle" xml:space="preserve">
     <value>Выберите тему</value>

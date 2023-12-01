@@ -120,6 +120,9 @@
   <data name="ChatsPageTitle" xml:space="preserve">
     <value>Chats</value>
   </data>
+  <data name="CreatePost" xml:space="preserve">
+    <value>Create Post</value>
+  </data>
   <data name="DataTabTitle" xml:space="preserve">
     <value>Data</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="Page" xml:space="preserve">
     <value>page</value>
+  </data>
+  <data name="PostsPageTitle" xml:space="preserve">
+    <value>Posts</value>
   </data>
   <data name="SettingsPageThemePickerTitle" xml:space="preserve">
     <value>Select Theme</value>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPetApp.Pages.PostsPage"
+             xmlns:data="clr-namespace:MauiPetApp.Data"
+             xmlns:viewmodel="clr-namespace:MauiPetApp.ViewModels"
+             xmlns:strings="clr-namespace:MauiPetApp.Resources.Localization"
+             Title="{x:Static strings:AppResources.PostsPageTitle}">
+    
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="*">
+        <Button Grid.Row="0" Grid.Column="0" Text="{x:Static strings:AppResources.CreatePost}" Margin="20, 10, 20, 10" Command="{Binding AddNewPostCommand}" />
+        
+        <RefreshView Grid.Row="1" Grid.Column="0" IsRefreshing="{Binding IsRefreshing}" x:Name="refreshView" 
+             Command="{Binding LoadDataCommand}">
+            <CollectionView  Margin="30,20,30,30"
+                     ItemsSource="{Binding Posts}"                             
+                     SelectedItem="{Binding SelectedPost, Mode=TwoWay}"
+                     SelectionChangedCommand="{Binding PostSelectedCommand}"
+                     SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="data:Post">
+                        <VerticalStackLayout Padding="15,10" Margin="10,5,10,5">
+                            <HorizontalStackLayout>
+                                <Label Text="{Binding Id, StringFormat='{0}. '}" FontSize="Title" />
+                                <Label Text="{Binding Title}" FontSize="Title" />
+                            </HorizontalStackLayout>
+                            <Label Text="{Binding Body}" />
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+    
+</ContentPage>

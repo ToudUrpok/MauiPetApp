@@ -4,10 +4,12 @@
              x:Class="MauiPetApp.Pages.ChatsPage"
              xmlns:strings="clr-namespace:MauiPetApp.Resources.Localization"
              Title="{x:Static strings:AppResources.ChatsPageTitle}">
+
     <VerticalStackLayout>
         <Label 
             Text="CHATS"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
+
 </ContentPage>

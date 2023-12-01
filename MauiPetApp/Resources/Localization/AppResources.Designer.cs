@@ -70,6 +70,15 @@ namespace MauiPetApp.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Post.
+        /// </summary>
+        internal static string CreatePost {
+            get {
+                return ResourceManager.GetString("CreatePost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data.
         /// </summary>
         internal static string DataTabTitle {
@@ -111,6 +120,15 @@ namespace MauiPetApp.Resources.Localization {
         internal static string Page {
             get {
                 return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Posts.
+        /// </summary>
+        internal static string PostsPageTitle {
+            get {
+                return ResourceManager.GetString("PostsPageTitle", resourceCulture);
             }
         }
         
