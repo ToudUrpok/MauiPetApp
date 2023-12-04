@@ -138,6 +138,9 @@
   <data name="Page" xml:space="preserve">
     <value>page</value>
   </data>
+  <data name="PortalTabTitle" xml:space="preserve">
+    <value>Portal</value>
+  </data>
   <data name="PostsPageTitle" xml:space="preserve">
     <value>Posts</value>
   </data>
@@ -152,5 +155,8 @@
   </data>
   <data name="Theme" xml:space="preserve">
     <value>Theme</value>
+  </data>
+  <data name="WebPageTitle" xml:space="preserve">
+    <value>Web</value>
   </data>
 </root>

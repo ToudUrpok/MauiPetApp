@@ -7,12 +7,18 @@
     xmlns:strings="clr-namespace:MauiPetApp.Resources.Localization">
 
     <TabBar>
-        <ShellContent Title="{x:Static strings:AppResources.PostsPageTitle}"
-              Icon="chatsdark.png"
-              ContentTemplate="{DataTemplate pages:PostsPage}" />
-        <ShellContent Title="{x:Static strings:AppResources.ChatsPageTitle}"
-              Icon="chatsdark.png"
-              ContentTemplate="{DataTemplate pages:ChatsPage}" />
+        <Tab Title="{x:Static strings:AppResources.PortalTabTitle}"
+            Icon="chatsdark.png">
+            <ShellContent Title="{x:Static strings:AppResources.PostsPageTitle}"
+                          Icon="chatsdark.png"
+                          ContentTemplate="{DataTemplate pages:PostsPage}" />
+            <ShellContent Title="{x:Static strings:AppResources.ChatsPageTitle}"
+                          Icon="chatsdark.png"
+                          ContentTemplate="{DataTemplate pages:ChatsPage}" />
+            <ShellContent Title="{x:Static strings:AppResources.WebPageTitle}"
+                          Icon="chatsdark.png"
+                          ContentTemplate="{DataTemplate pages:WebPage}" />
+        </Tab>
         <Tab Title="{x:Static strings:AppResources.DataTabTitle}"
              Icon="datadark.png">
             <ShellContent Title="{x:Static strings:AppResources.ImagesPageTitle}"

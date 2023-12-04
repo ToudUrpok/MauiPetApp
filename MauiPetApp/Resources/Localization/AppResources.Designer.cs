@@ -124,6 +124,15 @@ namespace MauiPetApp.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Portal.
+        /// </summary>
+        internal static string PortalTabTitle {
+            get {
+                return ResourceManager.GetString("PortalTabTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Posts.
         /// </summary>
         internal static string PostsPageTitle {
@@ -165,6 +174,15 @@ namespace MauiPetApp.Resources.Localization {
         internal static string Theme {
             get {
                 return ResourceManager.GetString("Theme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web.
+        /// </summary>
+        internal static string WebPageTitle {
+            get {
+                return ResourceManager.GetString("WebPageTitle", resourceCulture);
             }
         }
     }
